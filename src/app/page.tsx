@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import BlurText from '@/components/reactbits/BlurText/BlurText';
-import { Copy, Images } from 'lucide-react';
+import { Copy, ImagePlus, Images, Link } from 'lucide-react';
 
 export default function Home() {
 	return (
@@ -33,11 +33,15 @@ export default function Home() {
 						Created At 02 Mei 2025
 					</p>
 					<button className="p-2 mt-3 w-fit text-lg text-blue-400 border border-zinc-500 cursor-pointer bg-zinc-900 rounded-full flex items-center justify-center">
-						<Copy />
+						<Link />
 					</button>
 				</div>
 			</header>
-			<div className="fixed bottom-0 bg-zinc-900 py-3 px-5 flex justify-center w-full"></div>
+			<div className="fixed bottom-0 bg-zinc-900 py-4 px-5 flex justify-center w-full">
+				<button className="px-6 py-2 mt-3 w-fit text-zinc-800 bg-zinc-300 cursor-pointer rounded-full flex items-center justify-center gap-2 text-base font-medium">
+					<ImagePlus /> Tambahkan Foto
+				</button>
+			</div>
 		</div>
 	);
 }
